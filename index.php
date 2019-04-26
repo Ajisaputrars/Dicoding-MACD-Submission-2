@@ -8,8 +8,8 @@ use MicrosoftAzure\Storage\Blob\Models\ListBlobsOptions;
 use MicrosoftAzure\Storage\Blob\Models\CreateContainerOptions;
 use MicrosoftAzure\Storage\Blob\Models\PublicAccessType;
 
-$connectionString = "DefaultEndpointsProtocol=https;AccountName=submission2storage;AccountKey=+yDy40V5rN460V+wEpN7hnPnTYR3MYm7u4yVhSwPoy4UadXQIyEwdwJCEwj5Y/G92v/s6TuGmV4QjVb80sf2Iw==";
-$containerName = "blobajisubmission2";
+$connectionString = "<YourKey>";
+$containerName = "<YourBlob>";
 // Create blob client.
 $blobClient = BlobRestProxy::createBlobService($connectionString);
 if (isset($_POST['submit'])) {
